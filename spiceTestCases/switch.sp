@@ -8,11 +8,11 @@
 
 X0 soln1 soln1_c pressurePump pressure=100k
 
-X3 air_1 PneumaticSwitch period=0.1m start=0.2m
+X3 air_1 PneumaticSwitch period=0.3m start=0.2m
 
 *component netlist
 X1 soln1 con_01 soln1_c con_01_c air_1 0 EValve
-X2 con_01 0 con_01_c out_c Channel
+X2 con_01 0 con_01_c out_c Channel vec_size=1
 
 * transient analysis
 .tran 0.01ms 1ms

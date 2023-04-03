@@ -11,7 +11,8 @@ DESIGN = test_chip1
 VA_INCLUDES = library_va_includes
 
 #SP_FILE = merged_test.sp
-SP_FILE = switch.sp
+#SP_FILE = switch.sp
+SP_FILE = array_test.sp
 
 run_spice:
 	cd spiceTestCases && sh ./../hspice_test.sh $(SP_FILE)
